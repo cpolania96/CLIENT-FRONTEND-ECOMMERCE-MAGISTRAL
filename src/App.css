@@ -6,9 +6,11 @@
   font-size: 16px; }
 
 .App {
-  background-color: red;
   width: 100%;
   height: 100vh; }
+
+.view-container {
+  width: 100%; }
 
 .news-banner {
   width: 100%;
@@ -55,6 +57,168 @@ header {
       header .header-container a .logo svg {
         height: 100%;
         width: 100%; }
+
+.title {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .title h2 {
+    color: #660D6E; }
+
+.carousell {
+  width: 100%;
+  height: 160px;
+  background-color: yellow; }
+
+.subtitle {
+  width: 100%;
+  height: 83px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .subtitle h2 {
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    font-size: 17px;
+    color: #660D6E; }
+
+.banner-icons {
+  width: 100%;
+  height: 80px;
+  margin: 10px 0; }
+  .banner-icons ul {
+    width: 86%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+    .banner-icons ul li {
+      height: 100%;
+      width: 30%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .banner-icons ul li h2 {
+        width: 100%;
+        height: 43%;
+        margin-top: 8px;
+        font-size: 0.8rem;
+        color: #660D6E;
+        text-align: center; }
+
+.nails-banner {
+  width: 100%;
+  height: 63px;
+  margin-bottom: 15px; }
+  .nails-banner img {
+    width: 100%; }
+
+.translate {
+  transform: translate(-1px, 0px);
+  width: 120%; }
+
+.container-content {
+  width: 100%;
+  margin-top: 15px;
+  background-color: white; }
+  .container-content ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.info-cards {
+  width: 90%;
+  height: 17rem;
+  display: flex;
+  margin-top: 15px;
+  background-color: #FCD3DB; }
+  .info-cards .img,
+  .info-cards .description {
+    height: 100%; }
+  .info-cards .img {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .info-cards .img img {
+      height: 74%; }
+  .info-cards .description {
+    width: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 89%;
+    margin: auto 0; }
+    .info-cards .description ul {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      flex-direction: column; }
+      .info-cards .description ul li {
+        width: 100%;
+        height: 2rem;
+        display: flex;
+        margin-top: 10px; }
+        .info-cards .description ul li ul {
+          width: 100%;
+          height: 100%; }
+          .info-cards .description ul li ul li {
+            display: flex;
+            width: 100%;
+            height: 100%; }
+            .info-cards .description ul li ul li svg {
+              width: 12%;
+              height: 100%;
+              margin-right: 6px; }
+            .info-cards .description ul li ul li h4 {
+              width: 80%;
+              font-size: 0.8rem;
+              color: #232025; }
+    .info-cards .description a {
+      width: 80%;
+      height: 20px;
+      margin: 0 auto;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      text-decoration: none; }
+      .info-cards .description a svg,
+      .info-cards .description a h3 {
+        height: 100%; }
+      .info-cards .description a svg {
+        height: 55%;
+        margin: 0 6px; }
+      .info-cards .description a h3 {
+        font-size: 0.8rem;
+        height: 63%;
+        margin-bottom: 4px;
+        color: #232025;
+        font-weight: bold; }
+    .info-cards .description .button-add {
+      width: 100%;
+      height: 36%;
+      display: flex;
+      margin-right: 13px;
+      justify-content: center;
+      align-items: center; }
+      .info-cards .description .button-add button {
+        height: 67%;
+        width: 80%;
+        margin-right: 5px;
+        font-size: 13px;
+        font-weight: bold;
+        background-color: #9E1460;
+        color: white;
+        border: none; }
 
 footer {
   height: 480px;
