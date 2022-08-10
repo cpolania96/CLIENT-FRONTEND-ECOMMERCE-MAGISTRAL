@@ -1,0 +1,125 @@
+footer {
+    height: 480px;
+    width: 100%;
+    background-color: #9E1460;
+    display: flex;
+    flex-direction: column;
+
+    .subscribe-form {
+        width: 100%;
+        height: 45%;
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            width: 78%;
+            height: 100%;
+
+            h4,
+            ul {
+                width: 100%;
+            }
+
+            h4 {
+                height: 27%;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                font-size: 15px;
+                color: white;
+                margin-bottom: 8px;
+            }
+
+            ul {
+                height: 46%;
+
+                li {
+                    height: 27px;
+                    width: 100%;
+                    list-style: none;
+                    margin-top: 5px;
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        border: none;
+                        border-bottom: 1px solid white;
+                        background-color: transparent;
+                        color: white;
+                        outline: none;
+
+                        &::placeholder {
+                            color: white;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                .submit {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 14px;
+                    height: 35px;
+
+                    input {
+                        width: 60%;
+                        height: 100%;
+                        background-color: white;
+                        color: #9E1460;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav {
+        width: 78%;
+        height: 34%;
+        margin: 0 auto;
+        color: white;
+        h3, ul>li {
+            font-size: 14px;
+        }
+        h3 {
+            width: 100%;
+            height: 20%;
+        }
+        ul {
+            width: 100%;
+            height: 100;
+            li {
+                width: 100%;
+                height: 100%;
+                list-style: none;
+                padding-left: 14px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .logo-footer {
+        width: 40%;
+        height: 16%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        svg {
+            .st0 {
+                fill: white;
+            }
+        }
+        p {
+            width: 100%;
+            height: 20%;
+            font-size: 14px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 4px;
+        }
+    }
+}

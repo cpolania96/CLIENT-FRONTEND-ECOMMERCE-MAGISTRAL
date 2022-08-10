@@ -29,7 +29,6 @@ function Header() {
                     </button>
                     <button>
                         {assets.search}
-
                     </button>
                     <Link to="/">
                         <div className='logo'>
@@ -43,7 +42,6 @@ function Header() {
                         {assets.shopbag}
                     </button>
                 </div>
-
             </header>
         </>
 
