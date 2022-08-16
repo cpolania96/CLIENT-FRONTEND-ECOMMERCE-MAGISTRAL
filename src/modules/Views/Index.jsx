@@ -3,6 +3,7 @@ import AssetsHandler from '../../assets/assetsHandler'
 import ContentContainer from '../Layout/ContentContainer'
 import Title from '../Layout/Title'
 import { Link } from "react-router-dom";
+import CardsOpinion from '../CardOpinion/CardsOpinion';
 
 function Index() {
   const sources = AssetsHandler()
@@ -137,13 +138,17 @@ function Index() {
                 </Link>
                 <div className='button-add'>
                   <button className='add-cart'>
-                        Agregar al carrito
+                    Agregar al carrito
                   </button>
                 </div>
               </div>
             </li>
           ))}
         </ul>
+      </div>
+      <Title title={'Nuestras clientas nos prefieren. Muchos casos de éxito alrededor de Colombia'} />
+      <div className="container-content">
+        <CardsOpinion />
       </div>
     </ContentContainer>
   )

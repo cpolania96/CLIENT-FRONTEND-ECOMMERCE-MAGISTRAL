@@ -21,6 +21,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     .header-container {
         width: 92%;
@@ -37,6 +38,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
+
             svg {
                 width: 60%;
             }
@@ -49,6 +51,7 @@ header {
                 justify-content: center;
                 align-items: center;
                 margin: 0 10px;
+
                 svg {
                     height: 100%;
                     width: 100%;
@@ -56,5 +59,51 @@ header {
             }
         }
     }
+}
 
+@media (max-width: 320px) {
+    .navbar-mobile {
+        width: 37rem;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.473);
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 5;
+        nav {
+            width: 90%;
+            height: 100%;
+            background-color: #9E1460;
+            position: relative;
+            .btn-close {
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 5px;
+                right: 5px;
+                button {
+                    border: none;
+                    background-color: transparent;
+                    color: white;
+                    font-size: 1.1rem;
+                }
+            }
+            menu {
+
+            }
+        }
+    }
+}
+
+.isActive {
+    max-width: 100%;
+    transition: 0.3s;
+}
+
+.isNonActive {
+    max-width: 0;
+    transition: 0.3s;
 }

@@ -1,5 +1,6 @@
 import IconCart from "./icon/IconCart"
 import IconCheck from "./icon/IconCheck"
+import IconComillas from "./icon/IconComillas"
 import IconDelivery from "./icon/IconDelivery"
 import IconEye from "./icon/IconEye"
 import IconMenu from "./icon/IconMenu"
@@ -27,6 +28,7 @@ function AssetsHandler() {
         },
         icons: {
             Check: <IconCheck />,
+            Comillas: <IconComillas />,
             Delivery: <IconDelivery />,
             Eye: <IconEye />,
             Menu: <IconMenu />,
