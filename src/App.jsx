@@ -1,4 +1,4 @@
-import './App.css'
+import './styles.css'
 import Header from './modules/Header/Header'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Index from './modules/Views/Index'
@@ -11,9 +11,7 @@ function App() {
   const { blockOverflow } = useContext(AppContext) || {}
   console.log(blockOverflow);
   const setOverflowHidden = () => {
-    if(blockOverflow ) {
-      return 'menu-open'
-    }
+    if(blockOverflow) return 'menu-open'
   }
   let isClicked = setOverflowHidden()
   return (
