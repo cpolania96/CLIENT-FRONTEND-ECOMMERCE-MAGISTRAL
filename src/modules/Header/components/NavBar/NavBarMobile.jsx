@@ -1,12 +1,15 @@
 import React from 'react'
 
-function NavBarMobile({ isVisible, setVisible }) {
+function NavBarMobile({ isVisible, setVisible, setBlockOverflow }) {
     return (
         <>
             <div className={`navbar-mobile ${isVisible ? `isActive` : `isNonActive`}`}>
                 <nav>
                     <div className='btn-close'>
-                        <button onClick={() => setVisible(false)}>
+                        <button onClick={() => {
+                            setVisible(false)
+                            setBlockOverflow(false)
+                        }}>
                             X
                         </button>
                     </div>

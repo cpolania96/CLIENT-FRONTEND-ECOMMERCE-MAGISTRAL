@@ -7,11 +7,11 @@ import { AppContext } from './Context/AppContext'
 import { useContext } from 'react'
 
 function App() {
-  const { clicked } = useContext(AppContext) || {}
 
-  console.log(clicked);
+  const { blockOverflow } = useContext(AppContext) || {}
+  console.log(blockOverflow);
   const setOverflowHidden = () => {
-    if(clicked) {
+    if(blockOverflow ) {
       return 'menu-open'
     }
   }

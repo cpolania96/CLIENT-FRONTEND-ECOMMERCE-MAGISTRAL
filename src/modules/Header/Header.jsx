@@ -1,24 +1,14 @@
 import React, { useEffect, useState, useContext } from 'react'
 import AssetsHandler from '../../assets/assetsHandler'
 import { Link } from 'react-router-dom'
-import NavBarMobile from './components/NavBarMobile'
+import NavBarMobile from './components/NavBar/NavBarMobile'
+import SearchBar from './components/SearchBar/SearchBar'
 import { AppContext } from '../../Context/AppContext'
 
 function Header() {
-
     const [menuIsVisible, setMenuIsVisible] = useState(false)
-    const {clicked, setClicked} = useContext(AppContext) || {}
-    console.log(clicked);
-    const menuVisible = (data) => {
-        setMenuIsVisible(data)
-    }
-    useEffect(() => {
-        menuVisible(true)
-    }, [menuIsVisible])
-
-
-
-    console.log(menuIsVisible);
+    const { setBlockOverflow } = useContext(AppContext) || {}
+    
     const sources = AssetsHandler()
     const newsBanner = {
         text: 'TU PRIMERA COMPRA CON BONO DE DESCUENTO DEL 10%'
@@ -31,6 +21,12 @@ function Header() {
         user: icon.icons.User,
         shopbag: icon.icons.ShopBag
     }
+
+    const setNavOpen = (bool) => {
+        setMenuIsVisible(bool)
+        setBlockOverflow(bool)
+    }
+
     return (
         <>
             <div className='news-banner'>
@@ -40,12 +36,12 @@ function Header() {
             </div>
             <header>
                 <div className="header-container">
-                    <button onClick={() => setClicked(true)}>
+                    <button onClick={() => setNavOpen(true)}>
                         {assets.menu}
                     </button>
-                    <button>
-                        {assets.search}
-                    </button>
+                    <SearchBar
+                        assets={assets}
+                    />
                     <Link to="/">
                         <div className='logo'>
                             {assets.logo}
@@ -59,8 +55,10 @@ function Header() {
                     </button>
                 </div>
                 <NavBarMobile
-                    isVisible={clicked}
-                    setVisible={setClicked} />
+                    isVisible={menuIsVisible}
+                    setVisible={setMenuIsVisible}
+                    setBlockOverflow={setBlockOverflow}
+                />
             </header>
         </>
 

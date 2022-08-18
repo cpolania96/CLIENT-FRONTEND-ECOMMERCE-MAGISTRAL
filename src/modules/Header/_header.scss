@@ -69,7 +69,7 @@ header {
         position: absolute;
         left: 0;
         top: 0;
-        z-index: 5;
+        z-index: 20;
         nav {
             width: 90%;
             height: 100%;
@@ -107,3 +107,5 @@ header {
     max-width: 0;
     transition: 0.3s;
 }
+
+@import './components/searchbar'

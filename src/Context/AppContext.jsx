@@ -3,12 +3,16 @@ import React, { createContext, useState } from 'react'
 export const AppContext = createContext()
 
 export function AppContextProvider({children}) {
-    const [clicked, setClicked] = useState(false)
+
+    // Estado que controla la barra de navegacion
+    const [blockOverflow, setBlockOverflow] = useState(false)
+    // _________________________________________
+
     return (
         <AppContext.Provider
             value={{
-                clicked,
-                setClicked
+                blockOverflow,
+                setBlockOverflow
             }}>
             {children}
         </AppContext.Provider>
