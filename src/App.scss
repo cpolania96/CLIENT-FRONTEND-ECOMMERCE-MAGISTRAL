@@ -13,7 +13,9 @@
     overflow: hidden   
 }
 @import './fonts';
+@import './modules/Buttons/buttons';
 @import './modules/Layout/content-container';
 @import './modules/Header/header';
+@import './modules/NavBar/navbar-mobile';
 @import './modules/Views/index';
 @import './modules/Footer/Footer';

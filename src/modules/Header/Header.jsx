@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react'
 import AssetsHandler from '../../assets/assetsHandler'
 import { Link } from 'react-router-dom'
-import NavBarMobile from './components/NavBar/NavBarMobile'
+import NavBarMobile from '../NavBar/NavBarMobile'
 import SearchBar from './components/SearchBar/SearchBar'
 import { AppContext } from '../../Context/AppContext'
 

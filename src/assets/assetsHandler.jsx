@@ -2,6 +2,7 @@ import IconCart from "./icon/IconCart"
 import IconCheck from "./icon/IconCheck"
 import IconComillas from "./icon/IconComillas"
 import IconDelivery from "./icon/IconDelivery"
+import IconEnter from "./icon/IconEnter"
 import IconEye from "./icon/IconEye"
 import IconMenu from "./icon/IconMenu"
 import IconSearch from "./icon/IconSeach"
@@ -9,6 +10,8 @@ import IconSecure from "./icon/IconSecure"
 import IconUser from "./icon/IconUser"
 import IconWallet from "./icon/IconWallet"
 import LogoMagistral from "./icon/LogoMagistral"
+import IconWhatsapp from "./icon/IconWhatsapp"
+import IconArrow from "./icon/IconArrow"
 
 function AssetsHandler() {
     
@@ -27,16 +30,19 @@ function AssetsHandler() {
             logo: <LogoMagistral />
         },
         icons: {
+            Arrow: <IconArrow />,
             Check: <IconCheck />,
             Comillas: <IconComillas />,
             Delivery: <IconDelivery />,
+            Enter: <IconEnter />,
             Eye: <IconEye />,
             Menu: <IconMenu />,
             Search: <IconSearch />,
             User: <IconUser />,
             Secure: <IconSecure />,
             ShopBag: <IconCart />,
-            Wallet: <IconWallet />
+            Wallet: <IconWallet />,
+            Whatsapp: <IconWhatsapp />,
         }
     }
 
