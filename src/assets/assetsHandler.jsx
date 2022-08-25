@@ -5,6 +5,7 @@ import IconDelivery from "./icon/IconDelivery"
 import IconEnter from "./icon/IconEnter"
 import IconEye from "./icon/IconEye"
 import IconMenu from "./icon/IconMenu"
+import IconPassword from "./icon/IconPassword"
 import IconSearch from "./icon/IconSeach"
 import IconSecure from "./icon/IconSecure"
 import IconUser from "./icon/IconUser"
@@ -12,6 +13,8 @@ import IconWallet from "./icon/IconWallet"
 import LogoMagistral from "./icon/LogoMagistral"
 import IconWhatsapp from "./icon/IconWhatsapp"
 import IconArrow from "./icon/IconArrow"
+import IconArroba from "./icon/IconArroba"
+import IconGoogle from "./icon/IconGoogle"
 
 function AssetsHandler() {
     
@@ -30,13 +33,16 @@ function AssetsHandler() {
             logo: <LogoMagistral />
         },
         icons: {
+            Arroba: <IconArroba />,
             Arrow: <IconArrow />,
             Check: <IconCheck />,
             Comillas: <IconComillas />,
             Delivery: <IconDelivery />,
             Enter: <IconEnter />,
             Eye: <IconEye />,
+            Google: <IconGoogle />,
             Menu: <IconMenu />,
+            Password: <IconPassword />,
             Search: <IconSearch />,
             User: <IconUser />,
             Secure: <IconSecure />,

@@ -115,9 +115,12 @@
   nav {
     menu {
       .login {
+        h2,
+        span {
+          transition: 0.3s;
+        }
         h2 {
           font-size: 1rem;
-          transition: 0.3s;
         }
         span {
           width: 7%;
@@ -125,9 +128,12 @@
       }
       ul {
         li {
+          h2,
+          svg {
+            transition: 0.3s;
+          }
           h2 {
             font-size: 1rem;
-            transition: 0.3s;
           }
           span {
             svg {
@@ -147,6 +153,10 @@
     menu {
       .login {
         a {
+          h2,
+          span {
+            transition: 0.3s;
+          }
           h2 {
             font-size: 0;
             transition: 0.3s;
@@ -158,9 +168,12 @@
       }
       ul {
         li {
+          h2,
+          svg {
+            transition: 0.3s;
+          }
           h2 {
             font-size: 0;
-            transition: 0.3s;
           }
           svg {
             width: 0;

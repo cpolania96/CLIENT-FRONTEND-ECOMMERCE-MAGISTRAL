@@ -1,0 +1,24 @@
+.signup-form {
+    height: 57%;
+    .conditions {
+        height: 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        font-size: 0.9rem;
+        color: #156D99;
+        margin: 10px 0;
+
+        &:hover,
+        input {
+            cursor: pointer;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        input {
+            margin: 0 8px;
+        }
+    }
+}

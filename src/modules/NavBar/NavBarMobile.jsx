@@ -39,13 +39,18 @@ function NavBarMobile({ isVisible, setVisible, setBlockOverflow }) {
 
   const menuList = menuItems.map((item) => (
     <li key={item.id}>
-      <Link to={item.link} onClick={() => setVisible(false)}>
+      <Link
+        to={item.link}
+        onClick={() => {
+          setVisible(false);
+          setBlockOverflow(false);
+        }}
+      >
         <h2>{item.name}</h2>
         <span>{assets.arrow}</span>
       </Link>
     </li>
   ));
-  console.log(menuList);
   return (
     <>
       <div
@@ -64,7 +69,13 @@ function NavBarMobile({ isVisible, setVisible, setBlockOverflow }) {
           </div>
           <menu>
             <div className="login">
-              <Link to="/auth" onClick={() => setVisible(false)}>
+              <Link
+                to="/auth"
+                onClick={() => {
+                  setVisible(false);
+                  setBlockOverflow(false);
+                }}
+              >
                 <span>{assets.enter}</span>
                 <h2>Ingresar</h2>
               </Link>

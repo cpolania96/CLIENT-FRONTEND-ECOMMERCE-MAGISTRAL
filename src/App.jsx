@@ -9,7 +9,7 @@ import Store from "./modules/Views/Store";
 import Blog from "./modules/Views/Blog";
 import Contact from "./modules/Views/Contact";
 import Legal from "./modules/Views/Legal";
-import Auth from "./modules/Views/Auth";
+import AuthView from "./modules/Login/AuthView";
 import Cart from "./modules/Views/Cart";
 import Checkout from "./modules/Views/Checkout";
 
@@ -42,7 +42,7 @@ function App() {
           <Route exact path="/blog" element={<Blog />} />
           <Route exact path="/contacto" element={<Contact />} />
           <Route exact path="/legal" element={<Legal />} />
-          <Route exact path="/auth" element={<Auth />} />
+          <Route exact path="/auth" element={<AuthView />} />
           <Route exact path="/carrito" element={<Cart />} />
           <Route exact path="/checkout" element={<Checkout />} />
         </Routes>

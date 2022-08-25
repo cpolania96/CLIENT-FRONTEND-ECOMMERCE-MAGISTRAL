@@ -14,7 +14,6 @@ function SearchBar({ assets }) {
         }
     }
     let isActive = setActive()
-    console.log(isActive);
     return (
         <>
             <BtnItemNav
