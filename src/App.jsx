@@ -12,6 +12,7 @@ import Legal from "./modules/Views/Legal";
 import AuthView from "./modules/Login/AuthView";
 import Cart from "./modules/Views/Cart";
 import Checkout from "./modules/Views/Checkout";
+import Detail from "./modules/Views/Detail";
 
 function App() {
   // Imports de contexto
@@ -45,6 +46,8 @@ function App() {
           <Route exact path="/auth" element={<AuthView />} />
           <Route exact path="/carrito" element={<Cart />} />
           <Route exact path="/checkout" element={<Checkout />} />
+          <Route exact path="/detail" element={<Detail />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

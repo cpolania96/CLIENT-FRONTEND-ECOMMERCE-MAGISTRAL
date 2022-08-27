@@ -1,105 +1,103 @@
-@media (max-width: 320px) {
-  .navbar-mobile {
-    width: 37rem;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.473);
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 20;
-    nav {
-      width: 90%;
-      height: 100%;
-      background-color: #9e1460;
-      position: relative;
-      padding-top: 11px;
-      .btn-close {
-        width: 2rem;
-        height: 2rem;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 5px;
-        right: 5px;
-        button {
-          border: none;
-          background-color: transparent;
-          color: white;
-          font-size: 1.1rem;
-        }
+.navbar-mobile {
+  width: 37rem;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.473);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  nav {
+    width: 90%;
+    height: 100%;
+    background-color: #9e1460;
+    position: relative;
+    padding-top: 11px;
+    .btn-close {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 5px;
+      right: 5px;
+      button {
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 1.1rem;
       }
-      .login {
-        width: 90%;
-        height: 9%;
-        margin: 0 auto;
-        padding-left: 20px;
+    }
+    .login {
+      width: 90%;
+      height: 9%;
+      margin: 0 auto;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      a {
+        width: 80%;
+        height: 60%;
         display: flex;
         align-items: center;
-        a {
-          width: 80%;
+        text-decoration: none;
+        span,
+        h2 {
           height: 60%;
           display: flex;
           align-items: center;
-          text-decoration: none;
-          span,
-          h2 {
-            height: 60%;
-            display: flex;
-            align-items: center;
-          }
-          span {
-            width: 5%;
-            margin-right: 8px;
-            svg {
-              .st0 {
-                fill: white;
-              }
+        }
+        span {
+          width: 5%;
+          margin-right: 8px;
+          svg {
+            .st0 {
+              fill: white;
             }
           }
-          h2 {
-            color: white;
-          }
+        }
+        h2 {
+          color: white;
         }
       }
-      menu {
-        width: 100%;
-        height: 100%;
-        margin: auto 0;
-        ul {
-          width: 90%;
-          height: 85%;
-          margin: auto;
-          display: flex;
-          flex-direction: column;
-          padding-top: 14px;
-          li {
+    }
+    menu {
+      width: 100%;
+      height: 100%;
+      margin: auto 0;
+      ul {
+        width: 90%;
+        height: 85%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 14px;
+        li {
+          width: 100%;
+          height: 9%;
+          list-style-type: none;
+          border-bottom: 1px solid white;
+          margin-bottom: 5px;
+          a {
             width: 100%;
-            height: 9%;
-            list-style-type: none;
-            border-bottom: 1px solid white;
-            margin-bottom: 5px;
-            a {
-              width: 100%;
-              height: 100%;
-              text-decoration: none;
+            height: 100%;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            h2,
+            span {
+              height: 52%;
+            }
+            h2 {
+              width: 93%;
+              color: white;
+            }
+            span {
               display: flex;
+              justify-content: center;
               align-items: center;
-              h2,
-              span {
-                height: 52%;
-              }
-              h2 {
-                width: 93%;
-                color: white;
-              }
-              span {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                svg {
-                  transform: rotate(270deg);
-                }
+              svg {
+                transform: rotate(270deg);
               }
             }
           }
@@ -107,6 +105,12 @@
       }
     }
   }
+}
+@media (max-width: 320px) {
+}
+@media (max-width: 425px) {
+}
+@media (max-width: 375px) {
 }
 
 .isActive {

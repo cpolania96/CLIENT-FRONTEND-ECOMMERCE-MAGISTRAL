@@ -15,6 +15,7 @@ import IconWhatsapp from "./icon/IconWhatsapp"
 import IconArrow from "./icon/IconArrow"
 import IconArroba from "./icon/IconArroba"
 import IconGoogle from "./icon/IconGoogle"
+import IconHome from "./icon/IconHome.jsx"
 
 function AssetsHandler() {
     
@@ -41,6 +42,7 @@ function AssetsHandler() {
             Enter: <IconEnter />,
             Eye: <IconEye />,
             Google: <IconGoogle />,
+            Home: <IconHome />,
             Menu: <IconMenu />,
             Password: <IconPassword />,
             Search: <IconSearch />,
