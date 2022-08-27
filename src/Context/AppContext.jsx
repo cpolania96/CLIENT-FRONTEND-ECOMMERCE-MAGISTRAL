@@ -29,12 +29,43 @@ export function AppContextProvider({ children }) {
   };
   //   _________________________________________
 
+  // DATA MENU DE INICIO
+
+  const menuItems = [
+    {
+      id: "NB1",
+      name: "Inicio",
+      link: "/",
+    },
+    {
+      id: "NB2",
+      name: "Tienda",
+      link: "/tienda",
+    },
+    {
+      id: "NB3",
+      name: "Blog",
+      link: "/blog",
+    },
+    {
+      id: "NB4",
+      name: "Contacto",
+      link: "/contacto",
+    },
+    {
+      id: "NB5",
+      name: "Legal",
+      link: "/legal",
+    },
+  ];
+//   _________________________________________
   return (
     <AppContext.Provider
       value={{
         blockOverflow,
         setBlockOverflow,
         scrollUp,
+        menuItems
       }}
     >
       {children}

@@ -1,0 +1,36 @@
+// _________________________ //
+// _____ MEDIA QUERIES _____ //
+
+@media (max-width: 768px) {
+  .menu-nav-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .menu-nav-desktop {
+    height: 36px;
+    width: 100%;
+    background: #9e1460;
+    ul {
+      width: 55%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        list-style-type: none;
+        color: white;
+        width: 114px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import AssetsHandler from "../../assets/assetsHandler";
-
+import { AppContext } from "../../Context/AppContext";
 function NavBarMobile({ isVisible, setVisible, setBlockOverflow }) {
   const sources = AssetsHandler();
   const assets = {
@@ -9,33 +9,7 @@ function NavBarMobile({ isVisible, setVisible, setBlockOverflow }) {
     enter: sources.icon.icons.Enter,
   };
 
-  const menuItems = [
-    {
-      id: "NB1",
-      name: "Inicio",
-      link: "/",
-    },
-    {
-      id: "NB2",
-      name: "Tienda",
-      link: "/tienda",
-    },
-    {
-      id: "NB3",
-      name: "Blog",
-      link: "/blog",
-    },
-    {
-      id: "NB4",
-      name: "Contacto",
-      link: "/contacto",
-    },
-    {
-      id: "NB5",
-      name: "Legal",
-      link: "/legal",
-    },
-  ];
+  const { menuItems } = useContext(AppContext);
 
   const menuList = menuItems.map((item) => (
     <li key={item.id}>
