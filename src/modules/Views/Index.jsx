@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import CardsOpinion from "../CardOpinion/CardsOpinion";
 import BtnWhatsapp from "../Buttons/BtnWhatsapp/BtnWhatsapp";
 import BtnUp from "../Buttons/BtnUp/BtnUp";
+import Carousell from "../Carousell/Carousell";
 
 function Index({ btnUp }) {
   const sources = AssetsHandler();
@@ -86,7 +87,7 @@ function Index({ btnUp }) {
 
   return (
     <ContentContainer>
-      <div className="carousell"></div>
+      <Carousell />
       <div className="subtitle">
         <h2>
           ¡Bienvenida a tu tienda favorita de productos para el cuidado

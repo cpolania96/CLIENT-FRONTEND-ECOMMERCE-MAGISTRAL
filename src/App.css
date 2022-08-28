@@ -276,7 +276,7 @@ header {
   position: relative; }
   header .header-container {
     width: 92%;
-    height: 4rem;
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -300,12 +300,22 @@ header {
         height: 100%;
         width: 100%; }
 
+@media (max-width: 768px) {
+  header {
+    -webkit-box-shadow: 0px 11px 47px -8px #707070;
+    -moz-box-shadow: 0px 11px 47px -8px #707070;
+    box-shadow: 0px 11px 47px -8px #707070; }
+    header .header-container a .logo {
+      top: 2%; } }
+
 @media (min-width: 768px) {
   header {
     flex-direction: column; }
     header .header-container {
       justify-content: flex-end;
-      height: 5rem; }
+      height: 59px; }
+      header .header-container .header-container {
+        width: 52%; }
       header .header-container .header-close {
         display: none; }
       header .header-container button {
@@ -316,6 +326,10 @@ header {
         top: 0;
         width: 131px;
         height: 60%; } }
+
+@media (min-width: 1024px) {
+  header .header-container a .logo {
+    top: 0; } }
 
 .search-bar {
   width: 100%;
@@ -378,16 +392,20 @@ header {
       justify-content: space-between;
       align-items: center; }
       .menu-nav-desktop ul li {
-        list-style-type: none;
-        color: white;
-        width: 114px;
+        width: 100%;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-        .menu-nav-desktop ul li:hover {
-          font-weight: bold;
-          cursor: pointer; } }
+        list-style-type: none; }
+        .menu-nav-desktop ul li a {
+          color: white;
+          width: 114px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none; }
+          .menu-nav-desktop ul li a:hover {
+            font-weight: bold;
+            cursor: pointer; } }
 
 .navbar-mobile {
   width: 37rem;
@@ -523,25 +541,22 @@ header {
   align-items: center;
   text-align: center; }
   .title h2 {
-    color: #660D6E; }
-
-.carousell {
-  width: 100%;
-  height: 160px;
-  background-color: blue; }
+    color: #660d6e; }
 
 .subtitle {
   width: 100%;
-  height: 83px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  height: 55px;
+  margin: 25px 0; }
   .subtitle h2 {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-size: 17px;
-    color: #660D6E; }
+    color: #660d6e;
+    margin: 0; }
 
 .banner-icons {
   width: 100%;
@@ -566,7 +581,7 @@ header {
         height: 43%;
         margin-top: 8px;
         font-size: 0.8rem;
-        color: #660D6E;
+        color: #660d6e;
         text-align: center; }
 
 .nails-banner {
@@ -596,7 +611,7 @@ header {
   height: 17rem;
   display: flex;
   margin-top: 15px;
-  background-color: #FCD3DB; }
+  background-color: #fcd3db; }
   .info-cards .img,
   .info-cards .description {
     height: 100%; }
@@ -673,9 +688,42 @@ header {
         margin-right: 5px;
         font-size: 13px;
         font-weight: bold;
-        background-color: #9E1460;
+        background-color: #9e1460;
         color: white;
         border: none; }
+
+.carousel {
+  width: 100%;
+  margin-top: 7px; }
+  .carousel .carousel-inner {
+    height: 100%;
+    width: 100%; }
+    .carousel .carousel-inner .carousel-item {
+      height: 100%; }
+      .carousel .carousel-inner .carousel-item img {
+        width: 100%; }
+
+@media (min-width: 320px) {
+  .carousel .carousel-inner .carousel-item {
+    width: 100%; } }
+
+@media (min-width: 375px) {
+  .carousel {
+    width: 100%; } }
+
+@media (min-width: 424px) {
+  .carousel {
+    width: 90%;
+    margin: 0 auto;
+    height: auto; }
+    .carousel .carousel-inner .carousel-item img {
+      height: 100%; } }
+
+@media (min-width: 768px) {
+  .carousel {
+    width: 56%;
+    margin: 0 auto;
+    height: auto; } }
 
 .container-content {
   margin: 15px 0; }
