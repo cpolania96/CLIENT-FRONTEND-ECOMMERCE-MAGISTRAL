@@ -565,6 +565,7 @@ header {
   .banner-icons ul {
     width: 86%;
     height: 100%;
+    padding: 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-around; }
@@ -693,8 +694,8 @@ header {
         border: none; }
 
 .carousel {
-  width: 100%;
-  margin-top: 7px; }
+  margin-top: 1px;
+  width: 100%; }
   .carousel .carousel-inner {
     height: 100%;
     width: 100%; }
@@ -707,21 +708,16 @@ header {
   .carousel .carousel-inner .carousel-item {
     width: 100%; } }
 
-@media (min-width: 375px) {
-  .carousel {
-    width: 100%; } }
-
 @media (min-width: 424px) {
   .carousel {
-    width: 90%;
-    margin: 0 auto;
+    margin: 1px auto;
     height: auto; }
     .carousel .carousel-inner .carousel-item img {
       height: 100%; } }
 
 @media (min-width: 768px) {
   .carousel {
-    width: 56%;
+    width: 100%;
     margin: 0 auto;
     height: auto; } }
 
