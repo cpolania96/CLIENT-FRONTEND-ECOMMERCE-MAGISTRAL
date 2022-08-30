@@ -1,9 +1,9 @@
 import React from "react";
-import AssetsHandler from "../../assets/assetsHandler";
 // import { useContext } from 'react'
 // import { CartContext } from '../../Context/cartContext'
 import ItemCount from "../ItemCount/ItemCount";
 import InfoContainer from "../ItemDetailContainer/modules/InfoContainer";
+import NavTitle from "../NavTitle";
 // import IconStar from '../../assets/svg/IconStar'
 
 function Detail() {
@@ -15,15 +15,10 @@ function Detail() {
 
   const img =
     "https://res.cloudinary.com/devsy44f3/image/upload/v1653280406/Products/pixlr-bg-result_3_eba6t1.png";
-  const assets = AssetsHandler();
-  const sources = {
-    home: assets.icon.icons.Home,
-  };
+  const titleNav = '/tienda/productos/endurecedor de uñas'
   return (
     <div className="detail">
-      <div className="route">
-        <span>{sources.home}</span>/productos/esmalte endurecedor de uñas
-      </div>
+      <NavTitle title={titleNav}/>
       <div className="title">ESMALTE ENDURECEDOR DE UÑAS</div>
       <div className="photo">
         <img src={img} alt="" />

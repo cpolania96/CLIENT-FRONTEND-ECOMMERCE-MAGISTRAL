@@ -6,6 +6,9 @@
   font-size: 16px;
   font-weight: 500; }
 
+ul {
+  padding: 0; }
+
 .App {
   width: 100%;
   height: 100vh; }
@@ -19,6 +22,8 @@ form,
 
 .signin {
   height: 42%; }
+  .signin ul {
+    padding: 0; }
 
 form {
   margin-top: 12px; }
@@ -159,6 +164,7 @@ h6 {
   .auth-form .btn-options {
     width: 88%;
     height: 44px;
+    padding: 0;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -525,23 +531,15 @@ header {
     transition: 0.3s; }
   .isNonActive nav menu .login a span {
     width: 0; }
-  .isNonActive nav menu ul li h2,
-  .isNonActive nav menu ul li svg {
-    transition: 0.3s; }
-  .isNonActive nav menu ul li h2 {
-    font-size: 0; }
-  .isNonActive nav menu ul li svg {
-    width: 0; }
-
-.title {
-  width: 77%;
-  margin: 10px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  .title h2 {
-    color: #660d6e; }
+  .isNonActive nav menu ul {
+    padding: 0; }
+    .isNonActive nav menu ul li h2,
+    .isNonActive nav menu ul li svg {
+      transition: 0.3s; }
+    .isNonActive nav menu ul li h2 {
+      font-size: 0; }
+    .isNonActive nav menu ul li svg {
+      width: 0; }
 
 .subtitle {
   width: 100%;
@@ -1279,3 +1277,75 @@ footer {
 .isSelectedButton {
   background-color: #9e1460;
   color: white; }
+
+.bartools {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #9e1460;
+  border-bottom: 1px solid #9e1460;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  position: relative; }
+  .bartools .tools,
+  .bartools .btn-views {
+    height: 100%; }
+  .bartools .tools {
+    height: 50%;
+    width: 65%;
+    display: flex;
+    margin-left: 15px; }
+    .bartools .tools .filter,
+    .bartools .tools .sort {
+      display: flex; }
+      .bartools .tools .filter span,
+      .bartools .tools .sort span {
+        height: 100%;
+        width: 14%;
+        display: flex; }
+        .bartools .tools .filter span svg,
+        .bartools .tools .sort span svg {
+          width: 100%;
+          height: auto; }
+          .bartools .tools .filter span svg .st0,
+          .bartools .tools .sort span svg .st0 {
+            fill: #9E1460; }
+      .bartools .tools .filter h3,
+      .bartools .tools .sort h3 {
+        width: 70%;
+        font-size: 0.9rem;
+        margin: 0 0 0 5px;
+        color: #9E1460;
+        font-weight: bold;
+        display: flex;
+        align-items: center; }
+    .bartools .tools .filter {
+      width: 35%; }
+      .bartools .tools .filter span {
+        width: 30%; }
+        .bartools .tools .filter span span {
+          width: 100%; }
+    .bartools .tools .sort {
+      width: 62%; }
+      .bartools .tools .sort span svg {
+        height: 100%; }
+  .bartools .btn-views {
+    width: 26%;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+.route {
+  margin: 14px 14px; }
+
+.title {
+  width: 77%;
+  margin: 7px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #660d6e;
+  font-weight: bold;
+  font-size: 1.2rem; }

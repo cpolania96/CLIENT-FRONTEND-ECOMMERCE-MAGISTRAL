@@ -5,7 +5,7 @@ import Index from "./modules/Views/Index";
 import Footer from "./modules/Footer/Footer";
 import { AppContext } from "./Context/AppContext";
 import { useContext, useRef } from "react";
-import Store from "./modules/Views/Store";
+import Store from "./modules/Views/Store/Store";
 import Blog from "./modules/Views/Blog";
 import Contact from "./modules/Views/Contact";
 import Legal from "./modules/Views/Legal";

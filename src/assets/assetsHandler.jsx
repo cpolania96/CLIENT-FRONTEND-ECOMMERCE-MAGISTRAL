@@ -16,6 +16,9 @@ import IconArrow from "./icon/IconArrow"
 import IconArroba from "./icon/IconArroba"
 import IconGoogle from "./icon/IconGoogle"
 import IconHome from "./icon/IconHome.jsx"
+import IconSort from "./icon/IconSort"
+import IconFilter from "./icon/IconFilter"
+
 
 function AssetsHandler() {
     
@@ -41,6 +44,7 @@ function AssetsHandler() {
             Delivery: <IconDelivery />,
             Enter: <IconEnter />,
             Eye: <IconEye />,
+            Filter: <IconFilter />,
             Google: <IconGoogle />,
             Home: <IconHome />,
             Menu: <IconMenu />,
@@ -49,6 +53,7 @@ function AssetsHandler() {
             User: <IconUser />,
             Secure: <IconSecure />,
             ShopBag: <IconCart />,
+            Sort: <IconSort />,
             Wallet: <IconWallet />,
             Whatsapp: <IconWhatsapp />,
         }
