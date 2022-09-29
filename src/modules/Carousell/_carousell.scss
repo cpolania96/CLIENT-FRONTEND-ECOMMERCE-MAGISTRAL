@@ -1,6 +1,8 @@
 .carousel {
-  margin-top: 1px;
-  width: 100%;
+  width: 86%;
+  margin: 5px auto;
+  border-radius: 20px;
+  overflow: hidden;
   .carousel-inner {
     height: 100%;
     width: 100%;
@@ -13,52 +15,18 @@
   }
 }
 @media (min-width: 320px) {
-  .carousel {
-    .carousel-inner {
-      .carousel-item {
-        width: 100%;
-      }
-    }
-  }
+  
 }
 @media (min-width: 375px) {
-  .carousel {
-  }
+  
 }
 @media (min-width: 424px) {
-  .carousel {
-    margin: 1px auto;
-    height: auto;
-    .carousel-inner {
-      .carousel-item {
-        img {
-          height: 100%;
-        }
-      }
-    }
-  }
+  
 }
 @media (min-width: 768px) {
-  .carousel {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    .carousel-inner {
-      .carousel-item {
-        img {
-        }
-      }
-    }
-  }
+  
 }
 
 @media (min-width: 1024px) {
-  .carousel {
-    .carousel-inner {
-      .carousel-item {
-        img {
-        }
-      }
-    }
-  }
+  
 }

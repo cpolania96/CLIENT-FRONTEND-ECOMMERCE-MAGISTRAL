@@ -1,40 +1,51 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
+import { useParams } from "react-router-dom";
+import { ProductContext } from "../../../../../Context/ProductContext";
 // import { useContext } from 'react'
 // import { CartContext } from '../../Context/cartContext'
-import ItemCount from "../ItemCount/ItemCount";
-import InfoContainer from "../ItemDetailContainer/modules/InfoContainer";
-import NavTitle from "../NavTitle";
+import ItemCount from "../../../../ItemCount/ItemCount";
+import InfoContainer from "../../../../ItemDetailContainer/modules/InfoContainer";
+import NavTitle from "../../../../NavTitle";
+import AddCart from "../AddCart/AddCart";
 // import IconStar from '../../assets/svg/IconStar'
 
 function Detail() {
-  // const { agregarAlCarrito } = useContext(CartContext)
 
-  // const onAdd = (cant) => {
-  //     agregarAlCarrito({ ...prod, cantidad: cant })
-  // }
+  const {setId, product} = useContext(ProductContext) || {}
+  const { _id, title, description, price, thumbnail } = product;
+  let id = useParams()
+  let params = id.id
 
-  const img =
-    "https://res.cloudinary.com/devsy44f3/image/upload/v1653280406/Products/pixlr-bg-result_3_eba6t1.png";
-  const titleNav = '/tienda/productos/endurecedor de uñas'
+  useEffect(()=> {
+    setId(params)
+  },[])
+  const stringToLowerCase = () => {
+    if(title !== undefined) {
+      return title.toLowerCase()
+    }
+  }
+  const titleNav = `/tienda/productos/${stringToLowerCase()}`
+
+  
   return (
     <div className="detail">
       <NavTitle title={titleNav}/>
-      <div className="title">ESMALTE ENDURECEDOR DE UÑAS</div>
+      <div className="title">{title}</div>
       <div className="photo">
-        <img src={img} alt="" />
+        <img src={thumbnail} alt="" />
       </div>
       <div className="info">
         <div className="rows r1"></div>
         <div className="rows r2">
-          <h6>Marca: Don Bigotes</h6>
-          <h6>SKU: THUJUJTUCERF</h6>
+          <h6>Marca: Magistral</h6>
+          <h6>SKU: {_id}</h6>
         </div>
         <div className="rows r3">
           <div className="container-star"></div>
           <div className="rate"></div>
         </div>
         <div className="rows r4">
-          <h6 className="price">$35.555</h6>
+          <h6 className="price">COP ${price}</h6>
           <h6 className="label">IVA incluido*</h6>
         </div>
         <div className="rows r5">
@@ -45,7 +56,7 @@ function Detail() {
           <h6>Stock: Disponible</h6>
         </div>
         <div className="rows r7">
-          <ItemCount buttonLabel="Agregar al carrito" />
+          <AddCart />
         </div>
         <div className="rows r6">
           <div className="label">
@@ -53,7 +64,7 @@ function Detail() {
           </div>
           <button>más info</button>
         </div>
-        <InfoContainer />
+        <InfoContainer description={description}/>
       </div>
     </div>
   );

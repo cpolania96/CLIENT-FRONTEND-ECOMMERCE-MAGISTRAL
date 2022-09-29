@@ -12,7 +12,8 @@ import Legal from "./modules/Views/Legal";
 import AuthView from "./modules/Login/AuthView";
 import Cart from "./modules/Views/Cart";
 import Checkout from "./modules/Views/Checkout";
-import Detail from "./modules/Views/Detail";
+import Detail from "./modules/Views/Store/modules/Detail/Detail";
+import ProductContextProvider from "./Context/ProductContext";
 
 function App() {
   // Imports de contexto
@@ -31,25 +32,24 @@ function App() {
 
   // _________________________________________
 
-
-  
   return (
     <div className={`App ${isClicked}`} id="app">
       <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Index />} />
-          <Route exact path="/tienda" element={<Store />} />
-          <Route exact path="/blog" element={<Blog />} />
-          <Route exact path="/contacto" element={<Contact />} />
-          <Route exact path="/legal" element={<Legal />} />
-          <Route exact path="/auth" element={<AuthView />} />
-          <Route exact path="/carrito" element={<Cart />} />
-          <Route exact path="/checkout" element={<Checkout />} />
-          <Route exact path="/detail" element={<Detail />} />
-
-        </Routes>
-        <Footer />
+        <ProductContextProvider>
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Index />} />
+            <Route exact path="/tienda" element={<Store />} />
+            <Route exact path="/blog" element={<Blog />} />
+            <Route exact path="/contacto" element={<Contact />} />
+            <Route exact path="/legal" element={<Legal />} />
+            <Route exact path="/auth" element={<AuthView />} />
+            <Route exact path="/carrito" element={<Cart />} />
+            <Route exact path="/checkout" element={<Checkout />} />
+            <Route exact path="/productos/detalle/:id" element={<Detail />} />
+          </Routes>
+          <Footer />
+        </ProductContextProvider>
       </BrowserRouter>
     </div>
   );

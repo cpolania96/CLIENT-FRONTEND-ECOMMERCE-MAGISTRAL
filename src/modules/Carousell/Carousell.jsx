@@ -10,22 +10,22 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const items = [
   {
-    src: 'https://res.cloudinary.com/devsy44f3/image/upload/v1661825287/Products/Samples/Recurso_2-80_gzvxrh.jpg',
+    src: 'https://res.cloudinary.com/devsy44f3/image/upload/v1664318390/Products/Ecommerce-Magistral/img/Recurso_9-80_ywky8f.jpg',
     altText: 'Slide 1',
     caption: 'Slide 1'
   },
   {
-    src: 'https://res.cloudinary.com/devsy44f3/image/upload/v1661825287/Products/Samples/Recurso_3-80_slucb9.jpg',
+    src: 'https://res.cloudinary.com/devsy44f3/image/upload/v1664318390/Products/Ecommerce-Magistral/img/Recurso_10-80_pf34pp.jpg',
     altText: 'Slide 2',
     caption: 'Slide 2'
   },
   {
-    src: 'https://res.cloudinary.com/devsy44f3/image/upload/v1661825287/Products/Samples/Recurso_5-80_vlzotj.jpg',
+    src: 'https://res.cloudinary.com/devsy44f3/image/upload/v1664318390/Products/Ecommerce-Magistral/img/Recurso_11-80_da745w.jpg',
     altText: 'Slide 3',
     caption: 'Slide 3'
   },
   {
-    src: 'https://res.cloudinary.com/devsy44f3/image/upload/v1661825287/Products/Samples/Recurso_5_2_-80_yddyw1.jpg',
+    src: 'https://res.cloudinary.com/devsy44f3/image/upload/v1664318389/Products/Ecommerce-Magistral/img/Recurso_12-80_yj8mer.jpg',
     altText: 'Slide 3',
     caption: 'Slide 3'
   }

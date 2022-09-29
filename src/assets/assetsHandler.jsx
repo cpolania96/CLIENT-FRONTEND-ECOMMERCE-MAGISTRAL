@@ -18,6 +18,18 @@ import IconGoogle from "./icon/IconGoogle"
 import IconHome from "./icon/IconHome.jsx"
 import IconSort from "./icon/IconSort"
 import IconFilter from "./icon/IconFilter"
+import IconGrid from "./icon/IconGrid"
+import IconList from "./icon/IconList"
+import Ico1 from "./buybanner/Ico1"
+import Ico2 from "./buybanner/Ico2"
+import Ico3 from "./buybanner/Ico3"
+import Ico4 from "./buybanner/Ico4"
+import IconNailCare from "./icon/IconNailCare"
+import IconSkinCare from "./icon/IconSkinCare"
+import IconHairCare from "./icon/IconHairCare"
+
+
+
 
 
 function AssetsHandler() {
@@ -46,16 +58,27 @@ function AssetsHandler() {
             Eye: <IconEye />,
             Filter: <IconFilter />,
             Google: <IconGoogle />,
+            Grid: <IconGrid />,
+            HairCare: <IconHairCare />,
             Home: <IconHome />,
+            List: <IconList />,
             Menu: <IconMenu />,
+            NailCare: <IconNailCare />,
             Password: <IconPassword />,
             Search: <IconSearch />,
+            SkinCare: <IconSkinCare />,
             User: <IconUser />,
             Secure: <IconSecure />,
             ShopBag: <IconCart />,
             Sort: <IconSort />,
             Wallet: <IconWallet />,
             Whatsapp: <IconWhatsapp />,
+        },
+        buybanner: {
+            Ico1: <Ico1 />,
+            Ico2: <Ico2 />,
+            Ico3: <Ico3 />,
+            Ico4: <Ico4 />
         }
     }
 

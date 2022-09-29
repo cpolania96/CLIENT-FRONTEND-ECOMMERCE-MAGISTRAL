@@ -22,7 +22,6 @@ function AuthContextProvider({ children }) {
 
   return (
     <>
-
       <AuthContext.Provider
         value={{
           cerrarSesion,

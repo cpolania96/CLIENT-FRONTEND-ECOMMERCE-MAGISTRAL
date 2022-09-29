@@ -1,24 +1,17 @@
 import React, { useEffect, useState, useRef } from "react";
 
-function InfoContainer() {
+function InfoContainer({ description }) {
   const [isSelected, setIsSelected] = useState(false);
   const [className, setClassName] = useState("");
 
   return (
     <div className="detail-info">
       <h3>
-        <button>
-          Descripción
-        </button>
+        <button>Descripción</button>
         <button>Caracteristicas</button>
       </h3>
       <div className="info-container">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
-          reiciendis! Eveniet obcaecati provident sint nemo repellat saepe
-          aliquam laudantium recusandae dolorem accusantium, officia magnam
-          fugiat ipsum. Vero dignissimos quasi numquam.
-        </p>
+        <p>{description}</p>
       </div>
     </div>
   );

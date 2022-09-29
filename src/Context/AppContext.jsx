@@ -9,24 +9,14 @@ export function AppContextProvider({ children }) {
   // _________________________________________
 
   // Botón para scroll al inicio
-  const btnUp = $("btn-up");
-  console.log(btnUp);
+ 
   const scrollUp = () => {
     const scroll = window.scrollY;
     if (scroll > 0) {
       window.requestAnimationFrame(scrollUp);
       window.scrollTo(0, scroll - scroll / 15);
     }
-  };
-  window.onscroll = () => {
-    let scroll = window.scrollY;
-    console.log(scroll);
-    if (scroll < 152) {
-        console.log('sisa');
-    } else if (scroll > 152) {
-      console.log('nona');
-    }
-  };
+  }
   //   _________________________________________
 
   // DATA MENU DE INICIO
@@ -58,14 +48,30 @@ export function AppContextProvider({ children }) {
       link: "/legal",
     },
   ];
-//   _________________________________________
+  //   _________________________________________
+
+  // DATA MENU DE INICIO
+
+  const [isSelected, setIsSelected] = useState("1");
+
+  // _________________________________________
+  // DATA MENU DE INICIO
+
+  const [loading, setLoading] = useState(false);
+
+  // _________________________________________
+
   return (
     <AppContext.Provider
       value={{
         blockOverflow,
         setBlockOverflow,
         scrollUp,
-        menuItems
+        menuItems,
+        isSelected,
+        setIsSelected,
+        loading,
+        setLoading
       }}
     >
       {children}

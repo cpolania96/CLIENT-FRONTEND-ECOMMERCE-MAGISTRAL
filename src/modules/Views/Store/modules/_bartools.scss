@@ -1,3 +1,4 @@
+// Barra de herramientas de la sección de tienda
 .bartools {
   width: 100%;
   height: 40px;
@@ -24,46 +25,88 @@
         width: 14%;
         display: flex;
         svg {
-            width: 100%;
-            height: auto;
-            .st0 {
-                fill: #9E1460
-            }
+          width: 100%;
+          height: auto;
+          .st0 {
+            fill: #9e1460;
+          }
         }
       }
       h3 {
         width: 70%;
         font-size: 0.9rem;
         margin: 0 0 0 5px;
-        color: #9E1460;
+        color: #9e1460;
         font-weight: bold;
         display: flex;
         align-items: center;
       }
     }
     .filter {
-        width: 35%;
+      width: 35%;
+      span {
+        width: 30%;
         span {
-            width: 30%;
-            span {
-                width: 100%;
-            }
+          width: 100%;
         }
+      }
     }
     .sort {
-        width: 62%;
-        span {
-            svg {
-                height: 100%;
-            }
+      width: 62%;
+      span {
+        svg {
+          height: 100%;
         }
+      }
     }
   }
   .btn-views {
-    width: 26%;
-    background-color: red;
+    width: 23%;
     position: absolute;
-    right: 0;
+    right: 13px;
     top: 0;
+    display: flex;
+    button {
+      width: 50%;
+      height: 100%;
+      border: none;
+      background-color: transparent;
+      svg {
+        width: 60%;
+        .st0 {
+          fill: #9e1460;
+        }
+      }
+    }
+  }
+}
+
+// Boton activo
+.btn1-is-active {
+  .btn-grid {
+    background-color: #9e1460;
+    svg {
+        .st0 {
+          fill: white;
+        }
+      }
+  }
+  .btn-list {
+    background-color: white;
+    svg {
+        .st0 {
+          fill: #9e1460;
+        }
+      }
+  }
+
+  
+}
+.btn-is-non-active {
+  background-color: white;
+  svg {
+    .st0 {
+      fill: #9e1460;
+    }
   }
 }
