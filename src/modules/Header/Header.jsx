@@ -34,14 +34,11 @@ function Header() {
         <p className="news-title">{newsBanner.text}</p>
       </div>
       <header>
+        <Link to="/">
+          <div className="logo">{assets.logo}</div>
+        </Link>
         <div className="header-container">
-          <button className="header-close" onClick={() => setNavOpen(true)}>
-            {assets.menu}
-          </button>
           <SearchBar assets={assets} />
-          <Link to="/">
-            <div className="logo">{assets.logo}</div>
-          </Link>
           <button className="user">{assets.user}</button>
           <button className="shopbag">{assets.shopbag}</button>
         </div>
@@ -51,6 +48,9 @@ function Header() {
           setBlockOverflow={setBlockOverflow}
         />
         <MenuNav />
+        <button className="header-close" onClick={() => setNavOpen(true)}>
+          {assets.menu}
+        </button>
       </header>
     </>
   );

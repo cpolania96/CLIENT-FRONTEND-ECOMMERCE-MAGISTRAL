@@ -87,16 +87,8 @@ function Index() {
       <ContainerProducts icon={assets.icon.nail} info={infoCards} title={"Rutina para el cuidado de uñas"}/>
       <ContainerProducts icon={assets.icon.skin} info={infoCards} title={"Rutina para el cuidado facial"}/>
       <ContainerProducts icon={assets.icon.hair} info={infoCards} title={"Rutina para el cuidado capilar"}/>
-      
       {/* TESTIMONIOS */}
-      <Title
-        title={
-          "Nuestras clientas nos prefieren. Muchos casos de éxito alrededor de Colombia"
-        }
-      />
-      <div className="container-content">
-        <CardsOpinion />
-      </div>
+     <CardsOpinion />
       <BtnWhatsapp />
       <BtnUp />
     </ContentContainer>

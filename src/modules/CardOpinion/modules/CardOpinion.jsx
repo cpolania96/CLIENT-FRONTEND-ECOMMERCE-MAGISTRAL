@@ -1,19 +1,20 @@
 import React from 'react'
 
-function CardOpinion({sources}) {
+function CardOpinion({sources, info}) {
     return (
-        <li className='card'>
+        <li className='card' key={info.id}>
             <div className="comillas-top">
                 {sources.icon.icons.Comillas}
             </div>
             <div className='empty'>
                 <div className='user-comments'>
-                    <img src="" alt="" />
+                    <img src={info.img} alt="" />
                 </div>
             </div>
             <div className='message-container'>
                 <div className='message'>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum id debitis eaque autem totam iusto tenetur labore.</p>
+                    <p>{info.message}</p>
+                    <p className='name'>-{info.name}</p>
                 </div>
             </div>
             <div className="comillas-bottom">

@@ -16,22 +16,62 @@
 
 header {
   width: 100%;
+  height: 57px;
   background: #9e1460;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-
+  .header-close {
+    width: 39px;
+    height: 39px;
+    left: 15px;
+    position: absolute;
+    top: 10px;
+    border: none;
+    background-color: transparent;
+    display: grid;
+    place-content: center;
+    svg {
+      .st0 {
+        fill: white;
+      }
+    }
+  }
+  a {
+    width: 128px;
+    height: 38px;
+    position: absolute;
+    top: 13%;
+    z-index: 5;
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      svg {
+        height: 100%;
+        width: 100%;
+        .st0 {
+          fill: white;
+        }
+      }
+    }
+  }
   .header-container {
-    width: 92%;
-    height: 64px;
+    width: 124px;
+    height: 28px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    position: absolute;
+    right: 46px;
+    top: 9%;
+    z-index: 5;
     button {
       height: 100%;
-      width: 15%;
+      width: 33.3%;
       border: none;
       background: transparent;
       display: flex;
@@ -45,81 +85,85 @@ header {
         }
       }
     }
-
-    a {
-      .logo {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 10px;
-
-        svg {
-          height: 100%;
-          width: 100%;
-          .st0 {
-            fill: white;
-          }
-        }
-      }
-    }
   }
 }
 // _________________________ //
 // _____ MEDIA QUERIES _____ //
 
-@media (min-width: 320px) {
-}
-@media (max-width: 768px) {
+@media (max-width: 375px) {
   header {
-    .header-container {
-      a {
-        .logo {
-          top: 2%;
-        }
+    a {
+      left: 17%;
+      .logo {
+        top: 0;
       }
+    }
+    .header-container {
+      width: 109px;
+      right: 7px;
+      top: 25%;
+    }
+  }
+}
+@media (max-width: 425px) {
+  header {
+    a {
+      left: 66px;
+      width: 111px;
+      top: 19%;
+      .logo {
+      }
+    }
+    .header-container {
+      top: 25%;
+      right: 10px;
     }
   }
 }
 @media (min-width: 768px) {
   header {
+    height: 75px;
     flex-direction: column;
+    .header-close {
+      display: none;
+    }
+    a {
+      left: 4rem;
+      width: 125px;
+      top: 16px;
+    }
     .header-container {
-      justify-content: flex-end;
-      height: 59px;
-      .header-container {
-        width: 52%;
-      }
-      .header-close {
-        display: none;
-      }
-      button {
-        width: 7%;
-      }
-      a {
-        .logo {
-          position: absolute;
-          left: 52px;
-          top: 0;
-          width: 131px;
-          height: 60%;
-        }
-      }
+      right: 27px;
+      top: 28%;
     }
   }
 }
 @media (min-width: 1024px) {
   header {
-    .header-container {
-      a {
-        .logo {
-          top: 0;
-        }
+    a {
+      left: 106px;
+      width: 131px;
+      top: 16px;
+      .logo {
+        top: 0;
       }
+    }
+    .header-container {
+      right: 99px;
+      top: 13px;
     }
   }
 }
-
+@media (min-width: 1348px) { 
+  header {
+    a {
+      left: 180px
+    }
+    .header-container {
+      right: 164px;
+    }
+  }
+}
 // ___________________ //
 // _____ IMPORTS _____ //
 
