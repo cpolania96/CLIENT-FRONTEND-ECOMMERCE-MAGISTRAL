@@ -62,6 +62,29 @@
   transform: translate(-1px, 0px);
   width: 120%;
 }
+@media (min-width: 320px) {
+}
+@media (min-width: 375px) {
+  .subtitle {
+    width: 80%;
+    margin: 25px auto;
+  }
+}
+@media (min-width: 424px) {
+  
+}
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 1024px) {
+  
+}
+@media (min-width: 1348px) {
+}
+
+// ___________________ //
+// _____ IMPORTS _____ //
 
 @import "../Carousell/carousell";
 @import "../CardOpinion/card-opinion";

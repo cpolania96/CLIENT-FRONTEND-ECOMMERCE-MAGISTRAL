@@ -363,8 +363,9 @@ header {
       width: 125px;
       top: 16px; }
     header .header-container {
-      right: 27px;
-      top: 28%; } }
+      right: 35px;
+      top: 28%;
+      width: 91px; } }
 
 @media (min-width: 1024px) {
   header a {
@@ -503,7 +504,8 @@ header {
         height: 60%;
         display: flex;
         align-items: center;
-        text-decoration: none; }
+        text-decoration: none;
+        position: inherit; }
         .navbar-mobile nav .login a span,
         .navbar-mobile nav .login a h2 {
           height: 60%;
@@ -526,6 +528,7 @@ header {
         margin: auto;
         display: flex;
         flex-direction: column;
+        padding: 0;
         padding-top: 14px; }
         .navbar-mobile nav menu ul li {
           width: 100%;
@@ -538,7 +541,8 @@ header {
             height: 100%;
             text-decoration: none;
             display: flex;
-            align-items: center; }
+            align-items: center;
+            position: inherit; }
             .navbar-mobile nav menu ul li a h2,
             .navbar-mobile nav menu ul li a span {
               height: 52%; }
@@ -647,6 +651,11 @@ header {
   transform: translate(-1px, 0px);
   width: 120%; }
 
+@media (min-width: 375px) {
+  .subtitle {
+    width: 80%;
+    margin: 25px auto; } }
+
 .carousel {
   width: 86%;
   margin: 5px auto;
@@ -659,6 +668,26 @@ header {
       height: 100%; }
       .carousel .carousel-inner .carousel-item img {
         width: 100%; }
+
+@media (min-width: 375px) {
+  .carousel {
+    height: 100%; } }
+
+@media (min-width: 424px) {
+  .carousel {
+    height: 270px; } }
+
+@media (min-width: 768px) {
+  .carousel {
+    height: 18rem; } }
+
+@media (min-width: 1024px) {
+  .carousel {
+    height: 20rem; } }
+
+@media (min-width: 1348px) {
+  .carousel {
+    height: 25rem; } }
 
 .cards-opinion .title {
   padding-left: 14px;
@@ -1178,74 +1207,6 @@ footer {
 .list-products {
   margin-bottom: 15px;
   font-size: 0.9rem; }
-  .list-products .item {
-    width: 90%;
-    height: 21rem;
-    margin: 0px auto;
-    background-image: url("https://res.cloudinary.com/devsy44f3/image/upload/v1661948903/Products/Ecommerce-Magistral/img/Post_de_Instagram_belleza_manicura_minimalista_rosa_celeste_xmbn1d.png");
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    position: relative; }
-    .list-products .item .img,
-    .list-products .item .data {
-      height: 100%; }
-    .list-products .item .img {
-      width: 29%;
-      height: 18rem;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .list-products .item .img img {
-        height: 78%; }
-    .list-products .item .data {
-      width: 57%;
-      margin: 7px 4px; }
-      .list-products .item .data ul {
-        width: 100%;
-        height: 79%;
-        margin: 0;
-        padding: 0; }
-        .list-products .item .data ul li {
-          list-style: none;
-          width: 100%;
-          padding: 7px; }
-          .list-products .item .data ul li h2 {
-            font-size: 1rem;
-            color: #660d6e;
-            font-weight: bold;
-            text-align: center;
-            margin: 0; }
-        .list-products .item .data ul .description {
-          font-size: 0.9rem;
-          height: 84px; }
-        .list-products .item .data ul .btn-moreinfo {
-          display: flex;
-          justify-content: center; }
-          .list-products .item .data ul .btn-moreinfo a {
-            background-color: #9e1460;
-            border: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            color: white;
-            width: 7rem;
-            height: 2rem;
-            border-radius: 4px; }
-        .list-products .item .data ul .price-info {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          margin: 13px 0; }
-          .list-products .item .data ul .price-info .price,
-          .list-products .item .data ul .price-info .info {
-            color: #232025; }
-          .list-products .item .data ul .price-info .price {
-            font-size: 1.2rem;
-            font-weight: bold; }
-          .list-products .item .data ul .price-info .info {
-            font-size: 0.7rem; }
 
 .grid-products {
   display: grid;
@@ -1253,85 +1214,67 @@ footer {
   grid-gap: 10px;
   width: 94%;
   margin: 15px auto; }
-  .grid-products .item {
-    width: 100%;
-    height: 45rem;
-    margin: 0px auto;
-    background-image: url("https://res.cloudinary.com/devsy44f3/image/upload/v1661948903/Products/Ecommerce-Magistral/img/Post_de_Instagram_belleza_manicura_minimalista_rosa_celeste_xmbn1d.png");
-    margin-bottom: 10px;
+
+.banner-store {
+  height: 9rem;
+  margin: 10px auto 0 auto;
+  background-color: #fcd3db;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  width: 100%; }
+  .banner-store img {
+    margin-left: 23px;
+    height: 92%; }
+  .banner-store .message {
+    position: absolute;
+    width: 46%;
+    right: 19px;
+    top: 11px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold; }
+  .banner-store button {
+    width: 102px;
+    height: 25px;
+    position: absolute;
+    bottom: 12px;
+    right: 41px;
+    border: none;
+    background-color: #9e1460;
+    color: white;
+    font-size: 0.8rem; }
+
+.container-categories {
+  height: 40px;
+  border: none;
+  border-left: 1px solid #9e1460;
+  border-right: 1px solid #9e1460;
+  border-top: 1px solid #9e1460;
+  display: flex;
+  align-items: center; }
+  .container-categories select {
+    margin-left: 14px;
+    border: none;
+    background-color: #9e1460;
+    width: 44%;
+    height: 80%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    position: relative; }
-    .grid-products .item .img,
-    .grid-products .item .data {
-      width: 100%; }
-    .grid-products .item .img {
-      height: 44%;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .grid-products .item .img img {
-        height: 100%; }
-    .grid-products .item .data {
-      height: 45%;
-      margin: 7px 4px; }
-      .grid-products .item .data ul {
-        width: 94%;
-        height: 79%;
-        margin: 0;
-        padding: 0; }
-        .grid-products .item .data ul li {
-          list-style: none;
-          width: 100%;
-          padding: 7px; }
-          .grid-products .item .data ul li h2 {
-            font-size: 0.9rem;
-            color: #660d6e;
-            font-weight: bold;
-            text-align: center;
-            margin: 0; }
-        .grid-products .item .data ul .description {
-          font-size: 0.9rem;
-          height: 110px; }
-        .grid-products .item .data ul .btn-moreinfo {
-          display: flex;
-          justify-content: center; }
-          .grid-products .item .data ul .btn-moreinfo a {
-            background-color: #9e1460;
-            border: none;
-            color: white;
-            width: 7rem;
-            height: 2rem;
-            border-radius: 4px; }
-        .grid-products .item .data ul .price-info {
-          display: flex;
-          align-items: center;
-          flex-direction: column;
-          margin: 13px 0; }
-          .grid-products .item .data ul .price-info .price,
-          .grid-products .item .data ul .price-info .info {
-            color: #232025; }
-          .grid-products .item .data ul .price-info .price {
-            font-size: 1.1rem;
-            font-weight: bold; }
-          .grid-products .item .data ul .price-info .info {
-            font-size: 0.7rem; }
-    .grid-products .item .add-cart-container .add-cart {
-      width: 93%;
-      height: 40px;
-      margin: 0px 4%; }
-      .grid-products .item .add-cart-container .add-cart .add-cart-btn {
-        width: 63%; }
-      .grid-products .item .add-cart-container .add-cart .counter {
-        width: 34%; }
+    color: white;
+    outline: none;
+    padding-left: 8px; }
+    .container-categories select option {
+      height: 20px;
+      font-size: 0.9rem; }
 
 .bartools {
   width: 100%;
   height: 40px;
   border-top: 1px solid #9e1460;
   border-bottom: 1px solid #9e1460;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
   display: flex;
   align-items: center;
   position: relative; }
@@ -1408,6 +1351,171 @@ footer {
   .btn-is-non-active svg .st0 {
     fill: #9e1460; }
 
+@media (min-width: 768px) {
+  .bartools {
+    display: none; } }
+
+.grid-products .item {
+  width: 100%;
+  height: 20rem;
+  margin: 0px;
+  background-color: white;
+  border: 1px solid #660d6e;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative; }
+  .grid-products .item .img,
+  .grid-products .item .data {
+    width: 100%; }
+  .grid-products .item .img {
+    height: 44%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .grid-products .item .img img {
+      height: 93%; }
+  .grid-products .item .data {
+    height: 45%; }
+    .grid-products .item .data ul {
+      width: 100%;
+      height: 90%;
+      margin: 0;
+      padding: 0; }
+      .grid-products .item .data ul li {
+        list-style: none;
+        width: 100%; }
+        .grid-products .item .data ul li h2 {
+          font-size: 0.8rem;
+          color: #660d6e;
+          font-weight: bold;
+          text-align: center;
+          margin: 5px 0; }
+      .grid-products .item .data ul .category {
+        margin-top: 10px;
+        height: 25%;
+        font-size: 0.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .grid-products .item .data ul .title {
+        height: 40px;
+        display: flex;
+        align-items: flex-start; }
+      .grid-products .item .data ul .btn-moreinfo {
+        display: flex;
+        justify-content: center; }
+        .grid-products .item .data ul .btn-moreinfo a {
+          background-color: #9e1460;
+          border: none;
+          color: white;
+          width: 7rem;
+          height: 2rem;
+          border-radius: 4px; }
+      .grid-products .item .data ul .price-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 3px 0; }
+        .grid-products .item .data ul .price-info .price,
+        .grid-products .item .data ul .price-info .info {
+          color: #232025; }
+        .grid-products .item .data ul .price-info .price {
+          font-size: 1.1rem;
+          font-weight: bold; }
+        .grid-products .item .data ul .price-info .info {
+          font-size: 0.7rem; }
+  .grid-products .item .add-cart-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 15%; }
+    .grid-products .item .add-cart-container .add-cart-btn {
+      height: 40px;
+      width: 90%;
+      margin: 0px 4%;
+      border: none;
+      background-color: #9e1460;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.7rem;
+      color: white; }
+
+.list-products .item {
+  width: 90%;
+  height: 206px;
+  margin: 0px auto;
+  background-color: white;
+  border: 1px solid #660d6e;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .list-products .item .img,
+  .list-products .item .data {
+    height: 100%; }
+  .list-products .item .img {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .list-products .item .img img {
+      height: 78%; }
+  .list-products .item .data {
+    width: 57%;
+    margin: 7px 4px; }
+    .list-products .item .data ul {
+      width: 100%;
+      height: 79%;
+      margin: 0;
+      padding: 0; }
+      .list-products .item .data ul li {
+        list-style: none;
+        width: 100%;
+        padding: 7px; }
+        .list-products .item .data ul li h2 {
+          font-size: 1rem;
+          color: #660d6e;
+          font-weight: bold;
+          text-align: center;
+          margin: 0; }
+      .list-products .item .data ul .description {
+        font-size: 0.9rem;
+        height: 84px; }
+      .list-products .item .data ul .btn-moreinfo {
+        display: flex;
+        justify-content: center; }
+        .list-products .item .data ul .btn-moreinfo a {
+          background-color: #9e1460;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          color: white;
+          width: 7rem;
+          height: 2rem;
+          border-radius: 4px; }
+      .list-products .item .data ul .price-info {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 13px 0; }
+        .list-products .item .data ul .price-info .price,
+        .list-products .item .data ul .price-info .info {
+          color: #232025; }
+        .list-products .item .data ul .price-info .price {
+          font-size: 1.2rem;
+          font-weight: bold; }
+        .list-products .item .data ul .price-info .info {
+          font-size: 0.7rem; }
+  .list-products .item .add-cart-container {
+    position: absolute;
+    bottom: 10px;
+    right: 16px; }
+
 .button-add {
   width: 88%;
   height: 36px;
@@ -1429,10 +1537,6 @@ footer {
     color: white;
     border-radius: 4px; }
 
-.route {
-  margin: 14px 14px;
-  padding: 0; }
-
 .title {
   display: flex;
   justify-content: center;
@@ -1441,3 +1545,24 @@ footer {
   color: #660d6e;
   font-weight: bold;
   font-size: 1.2rem; }
+
+.route {
+  padding: 0; }
+  .route .navpoint {
+    font-weight: bold; }
+
+@media (max-width: 425px) {
+  .route {
+    margin: 14px 14px; } }
+
+@media (min-width: 768px) {
+  .route {
+    margin: 12px 46px; } }
+
+@media (min-width: 1024px) {
+  .route {
+    margin: 13px 81px; } }
+
+@media (min-width: 1348px) {
+  .route {
+    margin: 12px 130px; } }

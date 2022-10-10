@@ -1,13 +1,41 @@
-.route {
-    margin: 14px 14px;
-    padding: 0;
-}
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #660d6e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #660d6e;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.route {
+  padding: 0;
+  .navpoint {
     font-weight: bold;
-    font-size: 1.2rem;
   }
+}
+
+// _________________________ //
+// _____ MEDIA QUERIES _____ //
+
+@media (max-width: 375px) {
+}
+@media (max-width: 425px) {
+  .route {
+    margin: 14px 14px;
+  }
+}
+@media (min-width: 768px) {
+  .route {
+    margin: 12px 46px;
+  }
+}
+@media (min-width: 1024px) {
+  .route {
+    margin: 13px 81px;
+  }
+}
+@media (min-width: 1348px) {
+  .route {
+    margin: 12px 130px;
+  }
+}

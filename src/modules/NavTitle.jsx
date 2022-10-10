@@ -1,17 +1,13 @@
-import React from 'react'
-import AssetsHandler from '../assets/assetsHandler';
+import React from "react";
+import AssetsHandler from "../assets/assetsHandler";
 
-function NavTitle({title}) {
-    const assets = AssetsHandler();
-  const sources = {
-    home: assets.icon.icons.Home,
-  };
+function NavTitle({ title }) {
   return (
     <div className="route">
-        <span>{sources.home}</span>
-        {title}
-      </div>
-  )
+      <span>Inicio / </span>
+      <span className="navpoint">{title}</span>
+    </div>
+  );
 }
 
-export default NavTitle
+export default NavTitle;

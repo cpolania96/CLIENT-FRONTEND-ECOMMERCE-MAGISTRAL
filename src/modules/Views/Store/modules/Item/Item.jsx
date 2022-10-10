@@ -4,7 +4,7 @@ import AddCart from "../AddCart/AddCart";
 
 function Item({ item }) {
 
-  const { _id, title, description, price, thumbnail } = item;
+  const { _id, title, price, thumbnail, category } = item;
   return (
     <div className="item" key={_id}>
       <div className="img">
@@ -12,12 +12,9 @@ function Item({ item }) {
       </div>
       <div className="data">
         <ul>
-          <li>
+          <li className="category">{category}</li>
+          <li className="title">
             <h2>{title}</h2>
-          </li>
-          <li className="description">{description}</li>
-          <li className="btn-moreinfo">
-            <Link to={`/productos/detalle/${item._id}`}>MÁS INFO</Link>
           </li>
           <li className="price-info">
             <div className="price">COP ${price.toLocaleString('de-DE')}*</div>

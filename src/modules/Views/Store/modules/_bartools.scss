@@ -4,7 +4,7 @@
   height: 40px;
   border-top: 1px solid #9e1460;
   border-bottom: 1px solid #9e1460;
-  margin: 10px 0;
+  margin: 0 0 10px 0;
   display: flex;
   align-items: center;
   position: relative;
@@ -86,21 +86,19 @@
   .btn-grid {
     background-color: #9e1460;
     svg {
-        .st0 {
-          fill: white;
-        }
+      .st0 {
+        fill: white;
       }
+    }
   }
   .btn-list {
     background-color: white;
     svg {
-        .st0 {
-          fill: #9e1460;
-        }
+      .st0 {
+        fill: #9e1460;
       }
+    }
   }
-
-  
 }
 .btn-is-non-active {
   background-color: white;
@@ -110,3 +108,11 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .bartools {
+    display: none;
+  }
+}
+
+@import './Item/item'

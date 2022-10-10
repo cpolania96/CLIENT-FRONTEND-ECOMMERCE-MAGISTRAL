@@ -133,8 +133,9 @@ header {
       top: 16px;
     }
     .header-container {
-      right: 27px;
+      right: 35px;
       top: 28%;
+      width: 91px;
     }
   }
 }
@@ -154,10 +155,10 @@ header {
     }
   }
 }
-@media (min-width: 1348px) { 
+@media (min-width: 1348px) {
   header {
     a {
-      left: 180px
+      left: 180px;
     }
     .header-container {
       right: 164px;
