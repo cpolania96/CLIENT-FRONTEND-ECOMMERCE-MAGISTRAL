@@ -53,6 +53,7 @@
   margin-bottom: 15px;
   display: flex;
   justify-content: flex-end;
+  background-color: #FCD3DB;
   img {
     height: 100%;
   }
@@ -71,14 +72,24 @@
   }
 }
 @media (min-width: 424px) {
-  
+  .buy-info {
+    width: 72% !important;
+  }
+  .banner-icons {
+    ul {
+      width: 70%;
+    }
+  }
 }
 @media (min-width: 768px) {
-  
+  .banner-icons {
+    ul {
+      width: 52%;
+    }
+  }
 }
 
 @media (min-width: 1024px) {
-  
 }
 @media (min-width: 1348px) {
 }
@@ -86,8 +97,8 @@
 // ___________________ //
 // _____ IMPORTS _____ //
 
-@import "../Carousell/carousell";
-@import "../CardOpinion/card-opinion";
-@import "../BuyInfo/buyinfo";
-@import "../ContainerProducts/container-products";
-@import "../Cards/card";
+@import "../../Carousell/carousell";
+@import "../../CardOpinion/card-opinion";
+@import "../../BuyInfo/buyinfo";
+@import "../../ContainerProducts/container-products";
+@import "../../Cards/card";

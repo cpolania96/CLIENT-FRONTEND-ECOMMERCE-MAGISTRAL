@@ -1,13 +1,12 @@
 import React from "react";
-import AssetsHandler from "../../assets/assetsHandler";
-import ContentContainer from "../Layout/ContentContainer";
-import Title from "../Layout/Title";
-import CardsOpinion from "../CardOpinion/CardsOpinion";
-import BtnWhatsapp from "../Buttons/BtnWhatsapp/BtnWhatsapp";
-import BtnUp from "../Buttons/BtnUp/BtnUp";
-import Carousell from "../Carousell/Carousell";
-import BuyInfo from "../BuyInfo/BuyInfo";
-import ContainerProducts from "../ContainerProducts/ContainerProducts";
+import ContentContainer from "../../Layout/ContentContainer";
+import CardsOpinion from "../../CardOpinion/CardsOpinion";
+import BtnWhatsapp from "../../Buttons/BtnWhatsapp/BtnWhatsapp";
+import BtnUp from "../../Buttons/BtnUp/BtnUp";
+import Carousell from "../../Carousell/Carousell";
+import BuyInfo from "../../BuyInfo/BuyInfo";
+import ContainerProducts from "../../ContainerProducts/ContainerProducts";
+import AssetsHandler from "../../../assets/assetsHandler";
 
 function Index() {
   const sources = AssetsHandler();

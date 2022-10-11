@@ -1,16 +1,15 @@
 .container-title {
-    display: flex;
-    width: 77%;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    svg {
-        margin-right: 10px;
-    }
-    .title {
-        text-align: left;
-        width: 62%;
-    }
+  display: flex;
+  width: 77%;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  svg {
+    margin-right: 10px;
+  }
+  .title {
+    text-align: left;
+  }
 }
 
 .products-container {
@@ -18,13 +17,12 @@
   width: 94% !important;
   position: relative !important;
   .offers {
-    width: 90% !important;
+    width: 96% !important;
     margin: 0 auto;
     height: 339px;
     display: flex;
     margin-bottom: 26px;
     flex-direction: row !important;
-    justify-content: space-between;
   }
 }
 
@@ -42,14 +40,53 @@
     border: none;
     background-color: #eb369a6c;
     &:first-child {
-        transform: rotate(90deg);
+      transform: rotate(90deg);
     }
     &:last-child {
-        transform: rotate(-90deg);
+      transform: rotate(-90deg);
     }
     svg {
-        height: 3rem;
-        width: 16px;
+      height: 3rem;
+      width: 16px;
+    }
+  }
+}
+@media (min-width: 320px) {
+  .container-title {
+    svg {
+      margin-right: 17px;
+    }
+    .title {
+      width: 62%;
+    }
+  }
+}
+@media (max-width: 375px) {
+}
+@media (min-width: 425px) {
+}
+@media (max-width: 425px) {
+}
+@media (min-width: 768px) {
+  .container-title {
+    svg {
+      margin-right: 17px;
+    }
+    .title {
+      width: 49%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+}
+@media (min-width: 1348px) {
+  .container-title {
+    svg {
+      margin-right: 17px;
+    }
+    .title {
+      width: 29%;
     }
   }
 }

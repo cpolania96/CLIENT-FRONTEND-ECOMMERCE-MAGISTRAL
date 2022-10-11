@@ -13,7 +13,7 @@ function Store() {
   const { loading } = useContext(AppContext);
   const title = "Tienda";
   const renderViewProducts = () => {
-    if (isSelected === "1") {
+    if (isSelected === "2") {
       return (
         <div className="list-products">
           {products.map(
@@ -21,7 +21,7 @@ function Store() {
           )}
         </div>
       );
-    } else if (isSelected === "2") {
+    } else if (isSelected === "1") {
       return (
         <div className="grid-products">
           {products.map((item) => (
@@ -31,10 +31,11 @@ function Store() {
       );
     }
   };
-  const photo = "https://res.cloudinary.com/devsy44f3/image/upload/v1665363913/Products/Ecommerce-Magistral/img/iStock-1061703286-1024x739-removebg-preview_f9ykhw.png";
+  const photo =
+    "https://res.cloudinary.com/devsy44f3/image/upload/v1665363913/Products/Ecommerce-Magistral/img/iStock-1061703286-1024x739-removebg-preview_f9ykhw.png";
   const message = "¡Los mejores productos para el cuidado corporal aqui!";
-  const assets = AssetsHandler()
-  const ico = assets.icon.icons.Arroba
+  const assets = AssetsHandler();
+  const ico = assets.icon.icons.Arroba;
   return (
     <div className="store">
       <NavTitle title={title} />
@@ -45,14 +46,13 @@ function Store() {
         <button>Ver más...</button>
       </div>
       <div className="container-categories">
-        <select name="Categorias"> 
-          <option selected hidden >Categorias</option>
-          <option value="">Cuidado de uñas</option>
-          <option value="">Cuidado Capilar</option>
-        </select>
+        <button name="Categorias">Categorias</button>
       </div>
       <BarTools />
-      {renderViewProducts()}
+      <div className="container-store">
+        <div className="category-routes"></div>
+        {renderViewProducts()}
+      </div>
     </div>
   );
 }

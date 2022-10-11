@@ -84,27 +84,37 @@
 // Boton activo
 .btn1-is-active {
   .btn-grid {
-    background-color: #9e1460;
+    background-color: #9e1460 !important;
     svg {
       .st0 {
-        fill: white;
+        fill: white !important;
       }
     }
   }
   .btn-list {
-    background-color: white;
+    background-color: white !important;
     svg {
       .st0 {
-        fill: #9e1460;
+        fill: #9e1460 !important;
       }
     }
   }
 }
-.btn-is-non-active {
-  background-color: white;
-  svg {
-    .st0 {
-      fill: #9e1460;
+.btn2-is-active {
+  .btn-grid {
+    background-color: white !important;
+    svg {
+      .st0 {
+        fill: #9e1460 !important;
+      }
+    }
+  }
+  .btn-list {
+    background-color: #9e1460 !important;
+    svg {
+      .st0 {
+        fill: white !important;
+      }
     }
   }
 }
